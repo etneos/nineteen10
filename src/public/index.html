@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nineteen10 Multiplayer</title>
+  <meta charset="utf-8" />
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #e0e0e0; }
+    #nicknameArea { margin-bottom: 2rem; }
+    #gameArea { display: none; }
+  </style>
+</head>
+<body>
+  <div id="nicknameArea">
+    <h2>Inserisci il tuo nickname:</h2>
+    <input type="text" id="nicknameInput" placeholder="Il tuo nome" maxlength="12" />
+    <button onclick="joinGame()">Inizia partita</button>
+    <p id="waiting" style="display:none;">In attesa di un altro giocatore...</p>
+  </div>
+
+  <div id="gameArea">
+    <h3 id="status">Gioco avviato</h3>
+    <!-- Qui andrà l'interfaccia del gioco -->
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+    let room = '';
+
+    function joinGame() {
+      const nick = document.getElementById('nicknameInput').value.trim() || 'Player';
+      socket.emit('setNickname', nick);
+      document.getElementById('waiting').style.display = 'block';
+    }
+
+    socket.on('waiting', () => {
+      document.getElementById('waiting').textContent = 'In attesa di un altro giocatore...';
+    });
+
+    socket.on('startGame', (data) => {
+      room = data.room;
+      document.getElementById('nicknameArea').style.display = 'none';
+      document.getElementById('gameArea').style.display = 'block';
+      document.getElementById('status').textContent = 'Sfida contro ' + data.players.find(p => p !== socket.nickname);
+    });
+
+    // Qui potrai gestire gli eventi del gioco
+  </script>
+</body>
+</html>

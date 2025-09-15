@@ -1,0 +1,121 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="mystyle.css">    
+  <script src="js/OKprimoquadro2.js" ></script> 
+  <script src="js/seldes.js"></script>    
+</head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HMJYLJ4F94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HMJYLJ4F94');
+</script>
+<body class="bodysfo" onload="init()" >
+<!-- <body onload="init()" >  
+ <div class="content">  --> 
+  <table height="100%" width="100%" >
+    <tr>        
+        <td align="center" width="15%" id="lgtd" style="position:fixed;">
+          <br><br><br>
+          <div id="Player1"> 
+            <img name="pl2_1" class="retro"/><br><br>
+            <img name="pl2_2" class="retro"/><br><br>
+            <img name="pl2_3" class="retro"/><br><br>
+            <img name="pl2_4" class="retro"/><br><br>
+            <div id="LG" class="plname">&beta;eta</div>
+          </div>   
+        </td>              
+        <td align="center" width="70%" >  
+            <table height="100%" width="100%">
+              <tr>
+                <td align="center" height="20%" id="gutd">
+                  <div id="Player2">                    
+                    <img name="pl3_1" class="retro" /> &ensp; 
+                    <img name="pl3_2" class="retro" />  &ensp;
+                    <img name="pl3_3" class="retro" />  &ensp;
+                    <img name="pl3_4" class="retro" />                                                          
+                 </div>
+                 <div id="GU" class="plname">&lambda;amda</div>
+                </td>
+             </tr>  
+     <tr>
+        <td height="60%" width="70%"align="center">       
+         <table id="panno" class="green" >
+          <tr>
+            <td colspan="3" height="20%" align="center" >                                      
+              <img id="retroround" />              
+              <img id="round" />
+           </td>   
+          </tr>   
+          <tr>
+             <td align="center" height="20%" width="20%"  >
+                <div id="Estraz1" class="retros">                     
+                </div>
+             </td> 
+             <td align="center" height="20%" width="30%" >                             
+                 <center><img name="mazzo" id="mazzos" onclick="estrai()" onmouseover="selcard(0)" onmouseout="deselcard(0)"/> </center>
+                    <img id="logos"> 
+                </div>
+             </td>
+             <td align="center" height="20%" width="20%">
+                <div id="Estraz3" class="retros">                    
+                </div>
+             </td> 
+          </tr>
+          <tr>
+            <td colspan="3" align="center" height="20%" width="70%">                           
+              <img id="youestraz" />
+            </td>   
+          </tr>                          
+         </table>                       
+        </td> <!--chiusura cella centrale -->
+    </tr>
+      <tr>
+        <td align="center"  height="20%" id="youtd" >                             
+           <img name="plx1" width="80" height="110" onclick="sostituzione(1)" style="border-radius: 7px;" onmouseover="selcard(1)" onmouseout="deselcard(1)">        
+           <img name="plx2" width="80" height="110" onclick="sostituzione(2)" style="border-radius: 7px;" onmouseover="selcard(2)" onmouseout="deselcard(2)">          
+           <img name="plx3" width="80" height="110" onclick="sostituzione(3)" style="border-radius: 7px;" onmouseover="selcard(3)" onmouseout="deselcard(3)">          
+           <img name="plx4" width="80" height="110" onclick="sostituzione(4)" style="border-radius: 7px;" onmouseover="selcard(4)" onmouseout="deselcard(4)">                                                                        
+           <div id="YOU" class="plname">&alpha;lpha</div>                  
+        </td> 
+      </tr> 
+  </table> 
+  </td>                                                   
+ <td align="center" width="15%" id="rgtd" style="position:fixed;">
+   <br><br><br>
+   <div id="Player3">
+       <img name="pl4_1" class="retro" /> <br> <br>
+       <img name="pl4_2" class="retro" /> <br> <br>
+       <img name="pl4_3" class="retro" /> <br> <br>
+       <img name="pl4_4" class="retro" /> <br>
+       <br><div id="RG" class="plname">&delta;elta</div>
+    </div>     
+  </td> 
+</tr>
+</table> 
+<div id="overlay" >
+  <div id="finestra">                                                            
+    <div id="engl"> 
+       <input type="button" value="R e s t a r t" onclick="window.open('primoquadro.htm','_top')" id="endwind"> 
+       <input type="button" value="C l o s e" onmousedown="toggle()" id="endwind">      
+     </div> 
+     <div class="caption">
+      <img id="thewin" alt="" />      
+      <span id="end"></span><br><br>
+      <span id="classifica"> </span> <br>              
+        <span id="classifica1"> </span> <br>
+          <span id="classifica2"> </span> <br>
+            <span id="classifica3"> </span> <br>
+              <span id="classifica4"> </span>       
+      </span>
+    </div>                                                        
+  </div>             
+</div>
+
+<!-- </div> del content -->
+</body>
+</html>

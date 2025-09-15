@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Impostiamo body e html per utilizzare tutta la viewport 
+  html, body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+  } */
+
+.container {
+  width: 1366px; /* Larghezza massima del contenitore */
+  height: 768px;
+  margin: 0 auto; /* Centra il contenitore */  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+  
+  /* Il container principale con dimensioni fisse 
+  .container {
+    width: 1366px;
+    height: 580px;
+    display: flex;
+    flex-direction: column;
+    background-color: white; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  } */
+  
+/* #bd{
+    background-image: url('img/sfondoOk.svg');
+      background-size: cover;
+} */
+
+#mobile-menu {
+text-align:center;
+margin: 0; /* Rimuove eventuali margini predefiniti */
+padding: 0; /* Rimuove padding imprevisti */  
+width: 700px; 
+height: 47px; 
+position:relative;    
+margin-top: -15%;
+background-color:#000078;  
+display: block;
+}
+
+#mobile-menu summary {    
+  list-style-type: none; 
+}
+/* Per browser Chromium */
+#mobile-menu summary::-webkit-details-marker {
+  display: none;    
+}  
+
+#burger {
+  position: absolute;
+  /*right: 50%; /* 10 px*/
+  right: 8%; /* 25%; */
+  top: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+/* Burger icon */
+#burger span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  /* background-color:#000078; */
+  background-color: #eee;
+  margin: 6px 0;    
+}
+
+nav {    
+  width: 100%;        
+  height: auto;      
+  position:absolute;        
+  left: 5%; 
+  top : 92%;
+  /*background-color: #ccc;*/
+  opacity: 0.8;    
+}
+
+nav ul {          
+  margin-left: 57%; /*32%;*/ 
+  padding: 0;
+  list-style-type: none;      
+  width: 150px;
+  border-radius:15px;
+  box-shadow: 4px 4px 4px lightblue;
+  background-color: #000078;/*#f1f1f1; */         
+}  
+
+li a {    
+  display: block;
+  /*color: #000;*/
+  color: #38f032;
+  padding: 8px 16px;
+  text-decoration: none;    
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  font-size: 20px; 
+}
+/* Change the link color on hover */
+li a:hover {
+background-color:orange; /*#555;*/
+color: white;
+}
+
+#central2{   
+    width: 64%;    
+   }
+
+#tt {      
+      display:block;
+      /*margin:0px auto;*/
+      margin-top: 2px;
+      text-align:center;
+      width: 700px;
+      height: 550px;
+      border-radius:5px;              
+      background: url("img/home_smart5.png") no-repeat;         
+
+}  
+          
+ #sapiri {
+    /*#finestra2 span { */
+      float: left;
+      padding-top: 16%;
+      width: 100%;
+      color: #38f032;
+      background: #222; /* browser che non supportano rgba */
+      background: rgba(0,0,0,0);
+      position: absolute;
+      left: 0;   
+      /*text-decoration: underline;*/       
+    }
+
+#fot2 {           
+  color : #38f032; /* whitesmoke; #000078;*/
+  font-size: 15px;
+}
+
+li span {
+  display: block;
+  width: 120px;
+  height: 1px;
+  top: 30px;
+  background-color:#38f032;
+  margin: 8px 0; 
+  opacity: 0.8;
+}  
+
+#finestra2 p {
+    left: 0;
+    font-size: 20px;
+    color:orange;
+    padding-top: 6%;
+    }
+    
+    
+    #wip {    /* solo index */  
+    content: url("img/workinprogress.png");
+    }
+    
+    #overlay {
+    display: none;
+    z-index: 2;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;        
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin:0 auto;
+    }
+    
+    
+    #overlay2 { /* solo index */
+    display: none;
+    z-index: 2;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    height: 100%;        
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    margin:0 auto;
+    }
+    
+
+#prime {
+    display: none;
+    /*display: block;*/
+    width: 18%;
+    position:fixed;
+    }
+    /* nessuno usa central */ 
+    #amz{
+      display: none;
+      /*display: block;*/
+      width: 18%;
+      position: fixed;  
+    }
+    #social{              
+    margin-top: -20%;
+    /*margin-left: 44.5%; */                    
+    margin-left: 43.5%;
+    }
+    #fb {  
+    float:center;    
+    margin-top: -3px;
+    content: url("img/fbIcon40.png");     
+    display: block;
+    }
+    #msgn {   
+    float:center;    
+    /*content: url("img/messengerIco35.png");*/
+    content: url("img/IstIcon40.png");
+    }
+    #hang {
+    float:center;     
+    /*content: url("img/hangIco35_ok.png");*/
+    content: url("img/TikIcon40.png");
+    }
+    #tlg { 
+    margin-top: -2px;
+    float:center;      
+    content: url("img/telegramIco32.png");
+    }
+    #fot {              
+    color : #000078;
+    font-family: cursive; 
+    font-weight: 900; 
+    font-size: 13px; 
+    }
+    .fot1{
+    /*margin-left: 26px;*/
+    margin-left: 0px;
+    }
+    #finestra3 {  /* solo index */
+    margin-top: 85px; 
+    margin-left: 29%;   
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 23px;
+    float: left;      
+    position: relative;
+    overflow: hidden;
+    }
+    #finestra2 {  /* solo index */
+    margin-top: 85px; 
+    margin-left: 29%;   
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 23px;
+    float: left;      
+    position: relative;
+    overflow: hidden;
+    }
+
+#idxinfo
+  {  
+  height: 4%; /*30px*/
+  /*width:52%; */
+  width: 6%; /*10%*/
+  border-radius: 5px;
+  /*background-color: #c6d1e0f1;
+  color: #000078; */
+  background-color: #000078;     
+  color: #c6d1e0f1;     
+  font-family :cursive;                     
+  font-size: 10px;  /*15px*/   
+  }  
+  
+  #smart_ban {
+    display: none;
+   }
+   
+/*-----------------------------------*/

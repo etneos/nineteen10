@@ -1,0 +1,47 @@
+.bd{                    
+    content: url("img/thanks_page.png");                        
+   }
+input
+{            
+height: 30px;
+width: 200px;
+border-radius: 5px;
+background-color: #c6d1e0f1;
+color: #000078;     
+font-family :cursive;                     
+font-size: 15px;     
+} 
+form {
+  font-family: cursive; 
+  color: #000078; 
+  font-size: 20px;
+}
+label, input[type=text], input[type=email], textarea {
+  /*display:block;*/
+  box-sizing: border-box;
+  width: 35%;
+}
+input[type=text], textarea {  
+  padding: 10px;
+  border: 1px solid #000078;    
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: #FFF;  
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+#base2{
+  content: url("img/idxImg_base2.png");
+}
